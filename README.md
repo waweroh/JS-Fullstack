@@ -1,1 +1,1 @@
-# JS-Fullstack
+# JavaScript Fundamentals
