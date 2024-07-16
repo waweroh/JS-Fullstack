@@ -21,6 +21,7 @@ colors.forEach((color) => console.log(color)) //anonymous arrow function
 const words = ["hello", "bird", "table", "football", "pipe", "code"];
 const capWords = words.forEach((word, index, arr) => {
   arr[index] = word[0].toUpperCase() + word.substring(1)
+  // for each index in the array should have a capital letter then rest og the string
 })
 console.log(words)
 
