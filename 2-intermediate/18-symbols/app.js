@@ -57,7 +57,9 @@ const theSymbol = Symbol('foo');
 console.log(typeof theSymbol)
 
 const obj3 = {};
-obj3[Symbol('a')] = 'a';
+
+obj3[Symbol('foo')] = 'some value for foo';
+console.log(obj3);
 
 for (let i in obj3) {
   console.log(i);
