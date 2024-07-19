@@ -51,6 +51,7 @@ const calcAverageScore = (scores) => {
   for (let subject in scores) {
     totalScore += scores[subject]; //1.totalScore = 0 + 90 = 90. 2.totalScore = 90 + 85 = 175
     numSubjects++; //1.numSubjects = 0 + 1 = 1., 2.numSubjects = 1 + 1 = 2
+                   //subjects are counted by the numSubjects incrementing every time loop runs. it will run for a total of the subjects we have.
   }
   const averageScore = totalScore / numSubjects;
   // Return an object containing totalScore, numSubjects, and averageScore
