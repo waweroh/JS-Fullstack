@@ -25,13 +25,14 @@
 // console.log(y);
 
  //instead of having all this objects we can have a function that returns an object
+ //enhanced object literal
 
  function createPerson (firstName, secondName, pl) {
   return { //property: param value
     firstName:firstName,
     secondName:secondName,
     pl:pl,
-    fullName: function () {
+    intro: function () {
       console.log(
         `hello my name is ${this.firstName} ${this.secondName} and I love ${this.pl}`
       );
@@ -40,5 +41,9 @@
  };
 
  const john = createPerson('John','Mark', "python")
+ const moses = createPerson('Moses', 'dev','javascript')
+ console.log(moses)
  console.log(john)
- console.log(john.fullName())
+//  console.log(john.fullName())
+john.intro();
+moses.intro();
