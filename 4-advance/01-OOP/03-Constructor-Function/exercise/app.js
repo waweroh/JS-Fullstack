@@ -45,8 +45,8 @@ function Car ( make, model, year, color) {
     return`Stopping the ${this.make} ${this.model}`
   };
 }
-car1 = new Car ("honda", "crv", "2017", "black")
-car2 = new Car ("range rover", "vogue", "2022", "maroon")
+const car1 = new Car ("honda", "crv", "2017", "black")
+const car2 = new Car ("range rover", "vogue", "2022", "maroon")
 console.log(car1) //obj
 console.log(car2) //obj
 console.log(car1.start()) //Starting the honda crv
