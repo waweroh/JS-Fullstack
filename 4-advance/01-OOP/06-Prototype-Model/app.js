@@ -31,3 +31,4 @@ function Person (firstName, lastName, pl) {
 const contender1 = new Person("Daniel", "Comier", "python")
 console.log(contender1.__proto__ );
 console.log(contender1.__proto__.__proto__);
+console.log(contender1.__proto__.__proto__.__proto__);
