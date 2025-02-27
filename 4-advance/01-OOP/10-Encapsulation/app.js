@@ -36,3 +36,5 @@ console.log(counter.getCount())
 
 counter.decrement();
 console.log(counter.getCount())
+
+// console.log(counter.count); // Error: count is not defined
