@@ -30,15 +30,14 @@ function getUserDataFromDB (name, callback) {
   },2000)
 }
 
-function getUserHobbies (hobbies, callback) {
+function getUserHobbies (name, callback) {
   setTimeout( () =>{
     console.log('Getting User hobbies')
-    hobbies = ["Football", "Reading", "singing"];
-    callback(hobbies)
+    callback(['Football', 'Reading', 'singing'])
   }, 2000)
 }
 getUserDataFromDB("moses", (data) => {
-  console.log(data);
+  console.log(data); //the callback takes the data as parameter meaning == name
   getUserHobbies(data, (hobbies) => {
     console.log(hobbies)
   });
